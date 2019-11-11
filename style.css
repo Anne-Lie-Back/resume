@@ -23,7 +23,14 @@ header{
     grid-area: header;
     background-color: #FFFFFF;
     height:3rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 
+}
+
+header h1{
+    margin-left:2rem;
 }
 
 .mainInfo{ 
@@ -65,6 +72,7 @@ header{
     display:flex;
     flex-direction: column;
     height: 75vh;
+    
 }
 
 .boxTabs{
@@ -73,22 +81,55 @@ header{
     justify-content: space-between;
 }
 
+.yellow{
+    background-color: lightyellow;
+}
+
+.lavender{
+    background-color: lavender;
+}
+
+.lightgreen{
+    background-color: lightgreen;
+}
+
+.lightblue{
+    background-color: lightskyblue;
+}
+
+.lightgrey{
+    background-color: lightgrey;
+}
+
+.tab-line{
+    border-bottom:1px solid black;
+}
+
 .tab{
-    background:white;
     margin:0 1rem;
+    padding: 0.5rem 1.5rem;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 
-    width:5rem;
     height:2rem;
 }
 
 .textBox{
-    background-color:white;
+
+    display:flex;
+    align-items: flex-start;
+    background-color:lightyellow;
     margin:0 1rem;
     height:100%;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    
+}
+
+.textBox p{
+    background-color:white;
+    padding:2.5rem 3.5rem;
+    margin: 1.5rem 2rem;
 }
 
 .portfolio{
