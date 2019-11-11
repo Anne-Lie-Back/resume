@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display:grid;
+
+    width:100%;
+    height: 100vh;
+    grid-template-areas: 
+    "header"
+    "mainInfo"
+    "portfolio"
+    "footer";
+
+    background-color: white;
+
+}
+
+header{
+    grid-area: header;
+    background-color: #FFFFFF;
+    height:3rem;
+
+}
+
+.mainInfo{ 
+    display:flex;
+    
+}
+
+.mainInfoGrid{
+    display:grid;
+    width:100%;
+    position:absolute;
+    grid-template-areas: 
+    "mainInfoFoto mainInfoText mainInfoText";
+}
+
+.heroImage{
+    width:100%;
+    opacity:0.8;
+    position:relative;
+}
+
+.mainInfoFoto{
+    grid-area: mainInfoFoto;
+    padding:3rem;
+}
+
+.profilePictures{
+    height:75vh;
+    border-radius: 0.2rem;
+}
+
+.mainInfoText{
+    grid-area: mainInfoText;
+    padding:3rem;
+  
+}
+
+.infoBoxContainer{
+    display:flex;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.boxTabs{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.tab{
+    background:white;
+    margin:0 1rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+    width:5rem;
+    height:2rem;
+}
+
+.textBox{
+    background-color:white;
+    margin:0 1rem;
+    height:100%;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.portfolio{
+    grid-area: portfolio;
+    background-color:lightslategray;
+    height:10rem;
+}
+
+footer{
+    grid-area: footer;
+    background-color:lightskyblue;
+    height: 5rem;
+}
