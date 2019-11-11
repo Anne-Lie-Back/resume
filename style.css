@@ -2,6 +2,12 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Baloo Bhaina', cursive;
+}
+
+p{
+    font-family: 'PT Sans', sans-serif;
 }
 
 body{
@@ -30,7 +36,7 @@ header{
 }
 
 header h1{
-    margin-left:2rem;
+    margin-left:3rem;
 }
 
 .mainInfo{ 
@@ -42,29 +48,36 @@ header h1{
     display:grid;
     width:100%;
     position:absolute;
+
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "mainInfoFoto mainInfoText mainInfoText";
+    
 }
-
 .heroImage{
     width:100%;
-    opacity:0.8;
+    opacity:0.7;
     position:relative;
 }
 
 .mainInfoFoto{
     grid-area: mainInfoFoto;
+    display:flex;
     padding:3rem;
 }
 
 .profilePictures{
-    height:75vh;
+    width:100%;
     border-radius: 0.2rem;
+    box-shadow: 0 0 2rem rgb(33, 73, 43);
 }
 
 .mainInfoText{
     grid-area: mainInfoText;
     padding:3rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   
 }
 
@@ -79,6 +92,11 @@ header h1{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+}
+
+.boxTabs h2{
+    font-size:0.8rem;
+    letter-spacing: 0.1rem;
 }
 
 .yellow{
@@ -101,9 +119,6 @@ header h1{
     background-color: lightgrey;
 }
 
-.tab-line{
-    border-bottom:1px solid black;
-}
 
 .tab{
     margin:0 1rem;
