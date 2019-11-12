@@ -15,19 +15,22 @@ body{
 
     width:100%;
     height: 100vh;
+
+    grid-template-rows: auto;
+
     grid-template-areas: 
     "header"
+    "heroImage"
     "mainInfo"
     "portfolio"
     "footer";
-
-    background-color: white;
+    background-color:black;
 
 }
 
 header{
     grid-area: header;
-    background-color: #FFFFFF;
+    background-color: black;
     height:3rem;
     display: flex;
     justify-content: start;
@@ -37,28 +40,35 @@ header{
 
 header h1{
     margin-left:3rem;
+    color:white;
 }
 
-.mainInfo{ 
-    display:flex;
-    
+.heroImageGrid{
+    grid-area: heroImage;
+
+}
+
+.heroImage{
+    width:100%;
+    opacity:0.9;
+
+}
+
+.mainInfo{
+    grid-area: mainInfo;
+    background-color: black;
 }
 
 .mainInfoGrid{
     display:grid;
     width:100%;
-    position:absolute;
 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "mainInfoFoto mainInfoText mainInfoText";
     
 }
-.heroImage{
-    width:100%;
-    opacity:0.7;
-    position:relative;
-}
+
 
 .mainInfoFoto{
     grid-area: mainInfoFoto;
@@ -78,7 +88,6 @@ header h1{
     display:flex;
     justify-content: center;
     align-items: center;
-  
 }
 
 .infoBoxContainer{
