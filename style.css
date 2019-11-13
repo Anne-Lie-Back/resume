@@ -55,6 +55,7 @@ header h1{
     width:100%;
     opacity:0.9;
     position:relative;
+    
    
 
 }
@@ -264,4 +265,39 @@ footer i{
 
 footer p{
     font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1200px){
+
+    .mainInfoGrid{
+        grid-template-areas: 
+        "mainInfoFoto mainInfoFoto mainInfoFoto"
+        "mainInfoText mainInfoText mainInfoText";
+    }
+
+    .mainInfoFoto{
+        justify-content: center;
+    }
+
+    .mainInfoFoto .profilePictures{
+        width:40%;
+    }
+
+    .mainInfoText{
+        height:30rem;
+        padding:1rem;
+    }
+
+    .heroImageGrid h4{
+        top:20rem;
+    }
+
+    .portfolio .project{
+        margin: 0 1rem;
+        padding:1rem;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    
 }
