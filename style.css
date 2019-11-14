@@ -55,9 +55,10 @@ header h1{
     width:100%;
     opacity:0.9;
     position:relative;
-    
-   
+}
 
+.heroImageMobile{
+    display:none;
 }
 
 .heroImageGrid h4{
@@ -112,9 +113,11 @@ header h1{
 
 .infoBoxContainer{
     display:flex;
-    flex-direction: column;
+    flex-direction: column; 
+}
 
-    
+.infoBoxContainerMobile{
+    display:none;
 }
 
 .boxTabs{
@@ -290,6 +293,7 @@ footer p{
 
     .heroImageGrid h4{
         top:20rem;
+        left:3rem;
     }
 
     .portfolio .project{
@@ -298,6 +302,94 @@ footer p{
     }
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 970px){
+    .heroImageGrid h4{
+        left:2rem;
+        top:17rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .heroImage{
+        display:none;
+    }
+
+    .heroImageMobile{
+        display:flex;
+        width:100%;
+    }
+
+    .heroImageGrid h4{
+        left:2rem;
+        top:38rem;
+        font-size: 1.3rem;
+    }
+
+   .infoBoxContainer{
+       display:none;
+   } 
+
+   .infoBoxContainerMobile{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
     
+    width:95%;
+    background-color: blue;
+    margin-top: 2rem;
+   }
+
+   .projectMobile{
+       display:flex;
+       width:100%;
+       flex-grow:1;
+       align-items: center;
+       justify-content: space-between;
+       border-bottom: 0.5rem solid black;
+   }
+
+   .infoBoxContainerMobile h2{
+    color:black;
+    margin: 0 0 0 2rem;
+    font-size: 1.5rem;
+    padding: 0.3rem 0 0 0;
+   }
+
+   .infoBoxContainerMobile i{
+       font-size:2rem;
+       margin: 0 2rem 0 0;
+   }
+
+   .portfolioHead p{
+       font-size:2rem;
+   }
+
+   .portfolio .projectContainer{
+       width:100%;
+       flex-direction:column;
+       align-items: center;
+       
+   }
+
+   .portfolio .project{
+       margin: 2rem 0;
+       width:25rem;
+   }
+
+   footer{
+       justify-content:center;
+      align-items: center;
+   }
+   footer p{
+       font-size:1.5rem;
+       margin-right:1rem;
+   }
+
+   footer i{
+       font-size:3rem;
+       margin: 0 2rem;
+   }
 }
