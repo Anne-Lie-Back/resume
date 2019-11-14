@@ -44,6 +44,12 @@ header h1{
     color:white;
 }
 
+.headlineExtra{
+    margin:0 1rem;
+    font-size:1.1rem;
+    color:white;
+}
+
 .heroImageGrid{
     grid-area: heroImage;
     display:flex;
@@ -261,7 +267,13 @@ footer{
     color:white;
 }
 
-footer i{
+footer .contactIcons{
+    display:flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+footer .contactIcons i{
     margin: 0 1rem;
     font-size: 2rem;
 }
@@ -384,12 +396,37 @@ footer p{
       align-items: center;
    }
    footer p{
-       font-size:1.5rem;
+       font-size:2rem;
        margin-right:1rem;
    }
 
-   footer i{
+   footer .contactIcons i{
        font-size:3rem;
        margin: 0 2rem;
    }
+}
+
+@media only screen and (max-width: 650px){
+
+    header{
+        flex-direction: column;
+        height:5.5rem;
+        align-items: flex-start;
+    }
+
+    header h1{
+        margin: 0 0 0 2rem;
+    }
+
+    header .headlineExtra{
+        margin: -1rem 0 0 1.5rem;
+    }
+
+    footer{
+        flex-direction:column;
+    }
+
+    footer p{
+        margin: 0 0 2.3rem 0;
+    }
 }
