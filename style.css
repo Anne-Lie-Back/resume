@@ -155,24 +155,24 @@ header h1{
     letter-spacing: 0.1rem;
 }
 
-.introduction{
+.yellow{
     background-color: lightyellow;
 }
 
-.education{
+.lavender{
     background-color: lavender;
 }
 
-.work{
+.green{
     background-color: lightgreen;
 }
 
-.strengths{
+.blue{
     background-color: lightskyblue;
 }
 
-.hobbys{
-    background-color: lightgrey;
+.grey{
+    background-color: lightslategray;
 }
 
 
@@ -372,7 +372,7 @@ footer p{
     margin-top: 2rem;
    }
 
-   .projectMobile{
+   .infoMobile{
        display:flex;
        width:100%;
        flex-grow:1;

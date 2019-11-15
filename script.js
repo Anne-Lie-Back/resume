@@ -1,32 +1,60 @@
-window.onload = startSliderDesktop
+
+window.addEventListener('load', loadSite)
+
 let currentIndex = 0
+
+function loadSite(){
+startSliderDesktop();
+introduction.addEventListener('click', changeToIntroduction);
+education.addEventListener('click', changeToEducation);
+work.addEventListener('click', changeToWork);
+strengths.addEventListener('click', changeToStrengths);
+hobbies.addEventListener('click', changeToHobbies);
+}
+
+let introduction = document.getElementById('introduction');
+let education = document.getElementById('education');
+let work = document.getElementById('work');
+let strengths = document.getElementById('strengths');
+let hobbies = document.getElementById('hobbies');
 
 
 function startSliderDesktop(){
-    setInterval(sliderImageDesktop, 4000)
+    setInterval(sliderImageDesktop, 4000);
 }
 
 function sliderImageDesktop(){
-    changeSliderObject(document.querySelectorAll('.desktopSlider img'), currentIndex)
-    changeSliderObject(document.querySelectorAll('.headlineSlider h4'), currentIndex)
-    currentIndex = (currentIndex + 1) % 3
+    changeSliderObject(document.querySelectorAll('.desktopSlider img'), currentIndex);
+    changeSliderObject(document.querySelectorAll('.headlineSlider h4'), currentIndex);
+    currentIndex = (currentIndex + 1) % 3;
 }
 
 function changeSliderObject(sliderObjects, currentIndex) {
-    sliderObjects[currentIndex].classList.add('hidden')
-    currentIndex = (currentIndex + 1) % sliderObjects.length
-    sliderObjects[currentIndex].classList.remove('hidden')
+    sliderObjects[currentIndex].classList.add('hidden');
+    currentIndex = (currentIndex + 1) % sliderObjects.length;
+    sliderObjects[currentIndex].classList.remove('hidden');
 }
 
 /**
  * trying to fix eventlisteners
  */
-const introduction = document.getElementsByClassName('introduction')
-let educationTab = document.querySelector(".education")
-
-educationTab.addEventListener('click', changeToEducation())
+function changeToIntroduction(){
+    console.log('Hello! This is mi!')
+}
 
 function changeToEducation(){
 
-    console.log('education is important')
+    console.log('education is important');
+}
+
+function changeToWork(){
+    console.log('Kiddos and burgers')
+}
+
+function changeToStrengths(){
+    console.log('education is important');
+}
+
+function changeToHobbies(){
+    console.log('I like turtles')
 }
