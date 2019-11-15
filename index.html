@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anne-Lie Bäck</title>
 
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|PT+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/165da34037.js" crossorigin="anonymous"></script>
 </head>
@@ -18,11 +23,19 @@
         <h1>Anne-Lie Bäck </h1><p class="headlineExtra"> - Frontend utvecklare och beteendevetare</p>
     </header>
     <div class="heroImageGrid">
-        <img class="heroImage" src="./images/hero-image1.3.jpg"> 
-        <!--<img class="heroImage" src="./images/japanPark.JPG">-->
-        <img class="heroImageMobile" src="./images/heroImageMobile.jpg">
-        <h4>Min hund Ninja och naturen <br> -  två av mina största inspirationskällor.</h4>    
+        <img class="heroImage " src="./images/hero-image1.3.jpg">
+        <div class ="desktopSlider">
+            <img class="heroImage " src="./images/hero-image1.3.jpg"> 
+            <img class="heroImage hidden" src="./images/japanView.JPG">
+            <img class="heroImage hidden" src="./images/japanNara.JPG">
+        </div>
+        <img class="heroImageMobile hidden" src="./images/heroImageMobile.jpg">
 
+        <div class="headlineSlider">
+            <h4>Min hund Ninja och naturen <br> -  två av mina största inspirationskällor.</h4> 
+            <h4 class="hidden">Hellu</h4> 
+            <h4 class="hidden">RÅDJUR!</h4> 
+        </div>  
     </div>
 
     <div class="mainInfo">
@@ -34,17 +47,16 @@
             <div class="mainInfoText">
                 <div class="infoBoxContainer">
                     <div class="boxTabs">
-                        <div class="tab yellow"><h2>Hello!</h2></div>
-                        <div class="tab lavender"><h2>UTBILDNING</h2></div>
-                        <div class="tab lightgrey"><h2>Arbetserfarenhet</h2></div>
-                        <div class="tab lightblue"><h2>STYRKOR</h2></div>
-                        <div class="tab lightgreen"><h2>Intressen</h2></div>
+                        <div class="tab introduction"><h2>Hello!</h2></div>
+                        <div class="tab education"><h2>UTBILDNING</h2></div>
+                        <div class="tab work"><h2>Arbetserfarenhet</h2></div>
+                        <div class="tab strengths"><h2>STYRKOR</h2></div>
+                        <div class="tab hobbys"><h2>Intressen</h2></div>
                     </div>
-                    <div class="textBox">
+                    <div id="textBox">
                         <div class="textBoxText">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iste facere eveniet asperiores ad cumque, tenetur perspiciatis reiciendis repellendus, nam, distinctio enim? Aut at ratione atque necessitatibus, similique aliquam ut.</p>
-                   
-                        </div>
+                            <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iste facere eveniet asperiores ad cumque, tenetur perspiciatis reiciendis repellendus, nam, distinctio enim? Aut at ratione atque necessitatibus, similique aliquam ut.</p>
+                       </div>
                     </div>
                 </div>
 

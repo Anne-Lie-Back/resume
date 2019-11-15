@@ -16,7 +16,7 @@ body{
     width:100%;
     height: 100vh;
 
-    grid-template-rows: auto;
+    grid-template-rows: 3rem auto;
 
     grid-template-areas: 
     "header"
@@ -52,24 +52,44 @@ header h1{
 
 .heroImageGrid{
     grid-area: heroImage;
-    display:flex;
+
+    /*HALP!*/
+    height:40rem;
+}
+
+
+.heroImage{
+    
+    width:100%;
 
 }
 
-.heroImage{
+.desktopSlider {
+    background: black;
+}
 
-    width:100%;
-    opacity:0.9;
-    position:relative;
+.desktopSlider img{
+    position:absolute;
+    transition: opacity 2000ms;
+    top:3rem;
+}
+
+.hidden {
+    opacity: 0;
 }
 
 .heroImageMobile{
     display:none;
 }
 
-.heroImageGrid h4{
-
+.hedalineSlider{
     position:absolute;
+    
+}
+
+.headlineSlider h4{
+    position:absolute;
+    transition: opacity 2000ms;
     top:23rem;
     left:5rem;
     font-size:1.5rem;
@@ -77,12 +97,10 @@ header h1{
     background:#00000090;
     padding: 0.3rem 1.5rem;
     border-radius: 0.3rem;
-
-
-
 }
 
 .mainInfo{
+    position:static;
     grid-area: mainInfo;
     background-color: black;
 }
@@ -137,23 +155,23 @@ header h1{
     letter-spacing: 0.1rem;
 }
 
-.yellow{
+.introduction{
     background-color: lightyellow;
 }
 
-.lavender{
+.education{
     background-color: lavender;
 }
 
-.lightgreen{
+.work{
     background-color: lightgreen;
 }
 
-.lightblue{
+.strengths{
     background-color: lightskyblue;
 }
 
-.lightgrey{
+.hobbys{
     background-color: lightgrey;
 }
 
@@ -167,7 +185,7 @@ header h1{
     height:2rem;
 }
 
-.textBox{
+#textBox{
 
     display:flex;
     flex-grow: 1;
