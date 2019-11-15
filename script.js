@@ -17,6 +17,8 @@ let education = document.getElementById('education');
 let work = document.getElementById('work');
 let strengths = document.getElementById('strengths');
 let hobbies = document.getElementById('hobbies');
+let textBox = document.getElementById('textBox')
+let text = document.getElementById('text');
 
 
 function startSliderDesktop(){
@@ -36,25 +38,30 @@ function changeSliderObject(sliderObjects, currentIndex) {
 }
 
 /**
- * trying to fix eventlisteners
+ * TEXTBOX FUNCTIONS!
  */
 function changeToIntroduction(){
-    console.log('Hello! This is mi!')
+    textBox.className = 'yellow'
+    text.innerHTML = '<p> HELLOOOO! THIS I! <br> LEEE DESU! </p>'
 }
 
 function changeToEducation(){
-
-    console.log('education is important');
+    textBox.className = 'lavender';
+    text.innerHTML = '<p>Education is mucho importantios</p>';
+    
 }
 
 function changeToWork(){
-    console.log('Kiddos and burgers')
+    textBox.className = 'grey';
+    text.innerHTML = '<p>Kiddos and burgers</p>';
 }
 
 function changeToStrengths(){
-    console.log('education is important');
+    textBox.className = 'green';
+    text.innerHTML = '<p>Ajm strong</p>';
 }
 
 function changeToHobbies(){
-    console.log('I like turtles')
+    textBox.className = 'blue';
+    text.innerHTML = '<p>I like turtles</p>';
 }
