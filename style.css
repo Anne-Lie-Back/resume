@@ -375,8 +375,18 @@ footer p{
        width:100%;
        flex-grow:1;
        align-items: center;
-       justify-content: space-between;
+       justify-content: center;
+       flex-direction: column;
        border-bottom: 0.5rem solid black;
+   }
+
+   .infoNavMobile{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+   
    }
 
    .infoBoxContainerMobile h2{
