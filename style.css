@@ -355,6 +355,10 @@ footer p{
         font-size: 1.3rem;
     }
 
+    .mainInfoText{
+        margin:1rem;
+    }
+
    .infoBoxContainer{
        display:none;
    } 
@@ -363,8 +367,9 @@ footer p{
     display:flex;
     flex-direction:column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     
+    position:absolute;
     width:95%;
     background-color: blue;
     margin-top: 2rem;
@@ -386,6 +391,7 @@ footer p{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    padding:0.5rem;
    
    }
 

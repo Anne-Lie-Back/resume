@@ -82,22 +82,48 @@ function changeToHobbies(){
 /**
  * MOBILE TEXTBOX FUNCTIONS
  */
+let showing = false
 
 function showIntroductionMobile(){
 
-    const div = document.createElement('div');
-    div.style.backgroundColor = 'white';
-    div.style.width = '90%';
-    div.style.height = '5rem';
-    div.style.margin = '0 2rem 2rem 2rem';
-    div.style.boxShadow = '0 0 10px grey';
-    div.style.borderRadius = '0.2rem';
-
-    document.getElementById('introductionMobile').appendChild(div);
+    const divIntroduction = document.createElement('div');
+    divIntroduction.style.backgroundColor = 'white';
+    divIntroduction.style.width = '90%';
+    divIntroduction.style.height = '5rem';
+    divIntroduction.style.margin = '0 2rem 2rem 2rem';
+    divIntroduction.style.boxShadow = '0 0 10px grey';
+    divIntroduction.style.borderRadius = '0.2rem';
+    divIntroduction.setAttribute("id", "Div1");
     
 
+    if(!showing){
+        document.getElementById('introductionMobile').append(divIntroduction);
+        showing = true;
+        console.log(showing)
+    }
+
+    else{
+        Div1.parentNode.removeChild(Div1);
+        showing = false;
+        console.log(showing = false)
+    }
+    
+
+    
 }
 
 function showEducationMobile(){
     console.log('Education is important in mobil också')
+}
+
+function showWorkMobile(){
+    console.log('workie')
+}
+
+function showStrengthsMobile(){
+    console.log('Stark')
+}
+
+function showHobbiesMobile(){
+    console.log('Jag gillar grejer')
 }
