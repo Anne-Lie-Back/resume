@@ -216,6 +216,7 @@ header h1{
     height:8rem;
     grid-area:"radiantBox";
     background-image:linear-gradient(black, rgb(53, 53, 53));
+    
 }
 .portfolio{
     grid-area: portfolio;
@@ -357,6 +358,7 @@ footer p{
 
     .mainInfoText{
         margin:1rem;
+        
     }
 
    .infoBoxContainer{
@@ -370,6 +372,7 @@ footer p{
     justify-content: center;
     
     position:absolute;
+    
     width:95%;
     background-color: blue;
     margin-top: 2rem;
