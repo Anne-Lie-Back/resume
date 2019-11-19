@@ -124,16 +124,18 @@ header h1{
 
 .mainInfoFoto{
     grid-area: mainInfoFoto;
-    display:flex;
-    
+    display:flex;  
 }
 
-.profilePictures img{
+.profilePictures{
     width:100%;
     border-radius: 0.2rem;
     padding:3rem 3rem 4.5rem 3rem;
-    margin:1rem;
+
+    
 }
+
+
 
 .mainInfoText{
     grid-area: mainInfoText;
@@ -370,6 +372,17 @@ footer p{
 }
 
 @media only screen and (max-width: 800px){
+    .mainInfoGrid{
+        grid-template-rows:auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "mainInfoFoto"
+        "mainInfoText";
+    }
+
+    .profilePictures{
+        padding:0;
+    }
 
     header{
         z-index: 1000;
@@ -394,7 +407,6 @@ footer p{
         top:38rem;
         font-size: 1.3rem;
     }
-
     .mainInfoText{
         margin:1rem;
         
