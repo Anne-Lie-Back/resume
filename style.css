@@ -11,6 +11,11 @@ p, b{
     line-height: 1.5rem;
 }
 
+li{
+    font-family: 'PT Sans', sans-serif;
+    line-height: 3rem;
+}
+
 body{
     display:grid;
 
@@ -93,7 +98,7 @@ header h1{
     left:5rem;
     font-size:1.5rem;
     color:white;
-    background:#00000090;
+    background:#00000099;
     padding: 0.3rem 1.5rem;
     border-radius: 0.3rem;
 }
@@ -118,12 +123,13 @@ header h1{
 .mainInfoFoto{
     grid-area: mainInfoFoto;
     display:flex;
-    padding:3rem 3rem 1rem 3rem;
+    
 }
 
 .profilePictures{
     width:100%;
     border-radius: 0.2rem;
+    padding:3rem 3rem 4.5rem 3rem;
 }
 
 .mainInfoText{
@@ -340,8 +346,19 @@ footer p{
 
 @media only screen and (max-width: 800px){
 
+    header{
+        z-index: 1000;
+    }
+    
     .heroImage{
         display:none;
+    }
+
+    .mobileSlider img{
+        top:0;
+        
+        position:absolute;
+        transition: opacity 2000ms;
     }
 
     .heroImageMobile{
