@@ -128,10 +128,11 @@ header h1{
     
 }
 
-.profilePictures{
+.profilePictures img{
     width:100%;
     border-radius: 0.2rem;
     padding:3rem 3rem 4.5rem 3rem;
+    margin:1rem;
 }
 
 .mainInfoText{
@@ -374,6 +375,10 @@ footer p{
         z-index: 1000;
     }
 
+    .blackMobile{
+        margin-top:3.5rem;
+    }
+
     .heroImage{
         display:none;
     }
@@ -491,6 +496,10 @@ footer p{
         top:5.5rem;   
     }
 
+    .blackMobile{
+        margin-top:5.5rem;
+    }
+
     header h1{
         margin: 0 0 0 2rem;
     }
@@ -505,6 +514,11 @@ footer p{
     .desktopSlider img{
         top:6.5rem;   
     }
+
+    .blackMobile{
+        margin-top:6.5rem;
+    }
+
     .heroImageGrid h4{
         left:1rem;
         top:30rem;
