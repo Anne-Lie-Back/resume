@@ -372,6 +372,7 @@ footer p{
 }
 
 @media only screen and (max-width: 800px){
+
     .mainInfoGrid{
         grid-template-rows:auto;
         grid-template-columns: auto;
@@ -404,7 +405,7 @@ footer p{
 
     .heroImageGrid h4{
         left:2rem;
-        top:38rem;
+        top:37.5rem;
         font-size: 1.3rem;
     }
     .mainInfoText{
@@ -428,6 +429,10 @@ footer p{
     background-color: blue;
     margin-top: 2rem;
    }
+
+   li{
+    line-height: 2rem;
+    }
 
    .infoMobile{
        display:flex;
@@ -480,6 +485,10 @@ footer p{
        width:20rem;
    }
 
+   .portfolio{
+       padding:0 0.5rem;
+   }
+
    footer{
        justify-content:center;
       align-items: center;
@@ -520,6 +529,10 @@ footer p{
         margin: -1rem 0 0 1.5rem;
     }
 
+    .heroImageGrid h4{
+        margin:0rem 0.75rem 0.75rem 0;
+    }
+
 }
 
 @media only screen and (max-width: 450px){
@@ -538,11 +551,36 @@ footer p{
         padding: 0.5rem;
         margin:0.5rem;
     }
+
+    .portfolio .project{
+        margin: 2rem 0;
+        width:15rem;
+    }
+    
+    footer .contactIcons i{
+        font-size: 3rem;
+        margin: 0 1rem;
+    }
 }
 
 @media only screen and (max-width: 350px){
+    header h1{
+        margin: 0 0 0 1rem;
+        
+    }
+
+    header .headlineExtra{
+        margin: -1rem 0 0 1rem;
+        font-size: 1rem;
+    }
     .heroImageGrid h4{
         left:0.5rem;
         top:25rem;
     }
+
+    .portfolio p{
+        text-align: center;
+        line-height: 1.5;
+    }
+
 }

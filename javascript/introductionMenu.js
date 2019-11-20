@@ -28,7 +28,7 @@ function writtenHobbiesText(source){
  * MAIN TEXTBOX FUNCTIONS!
  */
 function changeToIntroduction(){
-    textBox.className = 'yellow'
+    textBox.className = 'yellow';
     writtenIntroText(text);
 }
 
@@ -65,20 +65,34 @@ let showStrength = false;
 let showHobbies = false;
 
 
+function changeArrowIcon(chosenInfo){
+    if(document.getElementById(chosenInfo).className=="fas fa-angle-down"){
+      document.getElementById(chosenInfo).className = "fas fa-angle-up";
+    }else{
+      document.getElementById(chosenInfo).className = "fas fa-angle-down";
+    }
+}
 
-function showIntroductionMobile(){    
+function showIntroductionMobile(){ 
+    
+    changeArrowIcon("informationArrow");
 
     if(showIntro){
 
         removeInfoText(divIntro);
         mainInfoContainer.style.margin = "1rem";
         showIntro = false;
+        
     }
 
     else{
+        const xSmall = "53rem"
+        const small =  "32rem"
+        const medium = "25rem"
+
         createInfoText('introductionMobile' , 'divIntro');
-        
         mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";
+        setMarginBottom(xSmall, small, medium)
         writtenIntroText(divText);
         
         showIntro = true;
@@ -87,9 +101,12 @@ function showIntroductionMobile(){
         showStrength = false;
         showHobbies = false;
     }
+    
 }
 
 function showEducationMobile(){
+
+    changeArrowIcon("educationArrow");
 
     if(showEdu){
         removeInfoText(divEdu)
@@ -98,8 +115,14 @@ function showEducationMobile(){
     }
 
     else{
+        const xSmall = "50rem"
+        const small =  "35rem"
+        const medium = "28rem"
+
         createInfoText('educationMobile', 'divEdu');
-        mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";
+        
+        mainInfoContainer.style.margin = "1rem 1rem 0rem 1rem";
+        setMarginBottom(xSmall, small, medium);
         writtenEducationText(divText)
         showIntro = false;
         showEdu = true;
@@ -110,6 +133,8 @@ function showEducationMobile(){
 }
 
 function showWorkMobile(){
+    changeArrowIcon("workArrow");
+
     if(showWork){
 
         removeInfoText(divWork);
@@ -131,7 +156,27 @@ function showWorkMobile(){
     }
 }
 
+
+function setMarginBottom(xSmall, small, medium){
+    let screenSize = window.innerWidth;
+    
+        if(screenSize <= 450){
+            mainInfoContainer.style.marginBottom = xSmall;
+            console.log("xsmall")
+        }
+        else if(screenSize <= 600){
+            mainInfoContainer.style.marginBottom = small;
+            console.log("small")
+        }
+        else{
+            mainInfoContainer.style.marginBottom = medium;
+            console.log("medium")
+        }
+    }
+
 function showStrengthsMobile(){
+    changeArrowIcon("strengthsArrow");
+
     if(showStrength){
 
         removeInfoText(divStrength);
@@ -154,6 +199,8 @@ function showStrengthsMobile(){
 }
 
 function showHobbiesMobile(){
+    changeArrowIcon("hobbiesArrow");
+
     if(showHobbies){
 
         removeInfoText(divHobbies);
@@ -164,7 +211,7 @@ function showHobbiesMobile(){
     else{
         createInfoText('hobbiesMobile' , 'divHobbies');
         divText.setAttribute("id", "divHobbies");
-        mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";
+       
         writtenHobbiesText(divText);
         
         showIntro = false;
@@ -183,6 +230,7 @@ divText.style.margin = '0 2rem 2rem 2rem';
 divText.style.boxShadow = '0 0 10px grey';
 divText.style.borderRadius = '0.2rem';
 divText.style.lineHeight = '2rem';
+
 
 
 
