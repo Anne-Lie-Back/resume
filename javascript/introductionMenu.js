@@ -143,9 +143,14 @@ function showWorkMobile(){
     }
 
     else{
+        const xSmall = "70rem"
+        const small =  "42rem"
+        const medium = "30rem"
+
         createInfoText('workMobile' , 'divWork');
         divText.setAttribute("id", "divWork");
         mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";
+        setMarginBottom(xSmall, small, medium);
         writtenWorkText(divText);
         
         showIntro = false;
