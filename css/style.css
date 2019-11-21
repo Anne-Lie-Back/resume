@@ -281,10 +281,17 @@ header h1{
     display:flex;
     flex-direction:column;
     background-color:white;
-    padding:1rem;
+    padding:1.5rem;
     margin:0 4rem;
     border-radius: 0.2rem;
     box-shadow: 0 0 1rem black;
+
+    transition: padding 500ms ease-in-out;
+    
+}
+
+.portfolio .project:hover{
+    padding: 0;
 }
 
 .portfolio .project img{

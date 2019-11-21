@@ -1,6 +1,6 @@
 
 
-window.addEventListener('load', loadSite)
+window.addEventListener('load', loadSite);
 
 /**
  * What happens when the site loads and sets eventlisteners.
@@ -18,8 +18,8 @@ hobbies.addEventListener('click', changeToHobbies);
 introductionMobile.addEventListener('click',showIntroductionMobile);
 educationMobile.addEventListener('click', showEducationMobile);
 workMobile.addEventListener('click', showWorkMobile);
-strenghtsMobile.addEventListener('click', showStrengthsMobile)
-hobbiesMobile.addEventListener('click', showHobbiesMobile)
+strenghtsMobile.addEventListener('click', showStrengthsMobile);
+hobbiesMobile.addEventListener('click', showHobbiesMobile);
 }
 
 /**
@@ -29,12 +29,12 @@ hobbiesMobile.addEventListener('click', showHobbiesMobile)
 /**
  * @type {Number} currentIndex - calculates current index in slider.
  */
-let currentIndex = 0
+let currentIndex = 0;
 
 /**
  * @type {HTMLElement} textBox - gets the textBox for changeing color
  */
-const textBox = document.getElementById('textBox')
+const textBox = document.getElementById('textBox');
 
 /**
  * @type {HTMLElement} text - gets the text in the textboxes.
@@ -89,20 +89,20 @@ const educationMobile = document.getElementById('educationMobile');
 /**
  * @type {HTMLElement} workMobile - gets the work-tab
  */
-const workMobile = document.getElementById('workMobile')
+const workMobile = document.getElementById('workMobile');
 
 /**
  * @type {HTMLElement} strengthsMobile - gets the strengths-tab
  */
-const strenghtsMobile = document.getElementById('strengthsMobile')
+const strenghtsMobile = document.getElementById('strengthsMobile');
 
 /**
  * @type {HTMLElement} hobbiesMobile - gets the hobbies-tab
  */
-const hobbiesMobile = document.getElementById('hobbiesMobile')
+const hobbiesMobile = document.getElementById('hobbiesMobile');
 
 /**
  * @type {HTMLElement} mainInfoContainer - gets the mainInfotext-div for styling
  */
-const mainInfoContainer = document.querySelector(".mainInfoText")
+const mainInfoContainer = document.querySelector(".mainInfoText");
 

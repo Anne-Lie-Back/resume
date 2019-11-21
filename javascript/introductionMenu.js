@@ -27,7 +27,7 @@ function writtenEducationText(source){
     + 'Detta resulterade <b>2013</b> i en filosofie kandidatexamen i Socialpsykologi och en gedigen kunskap kring beteendevetenskap, '
     + 'grupp-psykologi och kommunikationsmetodik.</p>'
     + '<br> <p>Sedan <b>hösten 2019</b> är jag studerande på <b>yrkeshögskolan Medieinstitutet</b> i <b> Göteborg </b>. Här lär jag mig framför '
-    + 'allt <b> HTML, CSS & Javascript</b>.</p>'
+    + 'allt <b> HTML, CSS & Javascript</b>.</p>';
 }
 
 /**
@@ -84,7 +84,7 @@ function changeToIntroduction(){
   */
 function changeToEducation(){
     textBox.className = 'lavender';
-    writtenEducationText(text)
+    writtenEducationText(text);
     
 }
 
@@ -101,7 +101,7 @@ function changeToWork(){
   */
 function changeToStrengths(){
     textBox.className = 'green';
-    writtenStrengthsText(text)
+    writtenStrengthsText(text);
 }
 
  /**
@@ -109,7 +109,7 @@ function changeToStrengths(){
   */
 function changeToHobbies(){
     textBox.className = 'blue';
-    writtenHobbiesText(text)
+    writtenHobbiesText(text);
 }
 
 

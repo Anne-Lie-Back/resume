@@ -71,21 +71,21 @@ function showIntroductionMobile(){
 function showEducationMobile(){
 
     if(showEdu){
-        removeInfoText(divEdu)
+        removeInfoText(divEdu);
         mainInfoContainer.style.margin = "1rem";
         showEdu = false;
         changeArrowIcon();
     }
 
     else{
-        const xSmall = "45rem"
-        const small =  "35rem"
-        const medium = "27rem"
+        const xSmall = "45rem";
+        const small =  "35rem";
+        const medium = "27rem";
         mainInfoContainer.style.margin = "1rem 1rem 0rem 1rem";
         setMarginBottom(xSmall, small, medium);
         
         createInfoText('educationMobile', 'divEdu');
-        writtenEducationText(divText)
+        writtenEducationText(divText);
 
         showIntro = false;
         showEdu = true;
@@ -109,9 +109,9 @@ function showWorkMobile(){
     }
 
     else{
-        const xSmall = "62rem"
-        const small =  "39rem"
-        const medium = "27rem"
+        const xSmall = "62rem";
+        const small =  "39rem";
+        const medium = "27rem";
         mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";
         setMarginBottom(xSmall, small, medium);
 
@@ -142,15 +142,15 @@ function showStrengthsMobile(){
     }
 
     else{
-        const xSmall = "48rem"
-        const small =  "33rem"
-        const medium = "29rem"
+        const xSmall = "48rem";
+        const small =  "33rem";
+        const medium = "29rem";
         mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";
         setMarginBottom(xSmall, small, medium);
 
         createInfoText('strengthsMobile' , 'divStrength');
         divText.setAttribute("id", "divStrength");
-        writtenStrengthsText(divText)
+        writtenStrengthsText(divText);
         
         showIntro = false;
         showEdu = false;
@@ -175,9 +175,9 @@ function showHobbiesMobile(){
     }
 
     else{
-        const xSmall = "48rem"
-        const small =  "30rem"
-        const medium = "27rem"
+        const xSmall = "48rem";
+        const small =  "30rem";
+        const medium = "27rem";
         mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";
         setMarginBottom(xSmall, small, medium);
         
@@ -276,7 +276,8 @@ function changeArrowIcon(){
 function changeArrowIconIntro(){
     if(!showIntro){
       document.getElementById("introductionArrow").className = "fas fa-angle-down";
-    }else{
+    }
+    else{
       document.getElementById("introductionArrow").className = "fas fa-angle-up";
     }
 }
@@ -287,7 +288,8 @@ function changeArrowIconIntro(){
 function changeArrowIconEducation(){
     if(!showEdu){
       document.getElementById("educationArrow").className = "fas fa-angle-down";
-    }else{
+    }
+    else{
       document.getElementById("educationArrow").className = "fas fa-angle-up";
     }
 }
@@ -298,7 +300,8 @@ function changeArrowIconEducation(){
 function changeArrowIconWork(){
     if(!showWork){
       document.getElementById("workArrow").className = "fas fa-angle-down";
-    }else{
+    }
+    else{
       document.getElementById("workArrow").className = "fas fa-angle-up";
     }
 }
@@ -309,7 +312,8 @@ function changeArrowIconWork(){
 function changeArrowIconStrengths(){
     if(!showStrength){
       document.getElementById("strengthsArrow").className = "fas fa-angle-down";
-    }else{
+    }
+    else{
       document.getElementById("strengthsArrow").className = "fas fa-angle-up";
     }
 }
@@ -320,7 +324,8 @@ function changeArrowIconStrengths(){
 function changeArrowIconHobbies(){
     if(!showHobbies){
       document.getElementById("hobbiesArrow").className = "fas fa-angle-down";
-    }else{
+    }
+    else{
       document.getElementById("hobbiesArrow").className = "fas fa-angle-up";
     }
 }
