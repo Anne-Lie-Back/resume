@@ -1,5 +1,5 @@
 /****
- * You can find the text strings for the writtenInfo-parameters in the top of the introductionMenu.js
+ *****You can find the text strings for the writtenInfo-parameters in the top of the introductionMenu.js
  * 
  * 
  */
@@ -30,70 +30,9 @@ let showStrength = false;
 let showHobbies = false;
 
 /**
- * Checks all the up/down arrows in the small introductionMenu
+ * 
+ * ************** MAIN FUNCTIONS FOR SMALL MENU
  */
-function changeArrowIcon(){
-    changeArrowIconIntro();
-    changeArrowIconEducation();
-    changeArrowIconWork();
-    changeArrowIconStrengths();
-    changeArrowIconHobbies();
-}
-
-/**
- * Changes the first introduction-menu-arrow if needed
- */
-function changeArrowIconIntro(){
-    if(!showIntro){
-      document.getElementById("introductionArrow").className = "fas fa-angle-down";
-    }else{
-      document.getElementById("introductionArrow").className = "fas fa-angle-up";
-    }
-}
-
-/**
- * Changes the education-menu-arrow if needed
- */
-function changeArrowIconEducation(){
-    if(!showEdu){
-      document.getElementById("educationArrow").className = "fas fa-angle-down";
-    }else{
-      document.getElementById("educationArrow").className = "fas fa-angle-up";
-    }
-}
-
-/**
- * Changes the work-menu-arrow if needed
- */
-function changeArrowIconWork(){
-    if(!showWork){
-      document.getElementById("workArrow").className = "fas fa-angle-down";
-    }else{
-      document.getElementById("workArrow").className = "fas fa-angle-up";
-    }
-}
-
-/**
- * Changes the strengths-menu-arrow if needed
- */
-function changeArrowIconStrengths(){
-    if(!showStrength){
-      document.getElementById("strengthsArrow").className = "fas fa-angle-down";
-    }else{
-      document.getElementById("strengthsArrow").className = "fas fa-angle-up";
-    }
-}
-
-/**
- * Changes the hobbies-menu-arrow if needed
- */
-function changeArrowIconHobbies(){
-    if(!showHobbies){
-      document.getElementById("hobbiesArrow").className = "fas fa-angle-down";
-    }else{
-      document.getElementById("hobbiesArrow").className = "fas fa-angle-up";
-    }
-}
 
 /**
  * Handles what happens when introduction-tab in small-screen mode is clicked depending on if the text-div is visible(true) or not
@@ -256,6 +195,10 @@ function showHobbiesMobile(){
 }
 
 /**
+ * 
+ * *********************** ELEMENT STYLING FOR TEXTBOX FOR SMALL MENU*********************
+ */
+/**
  * @type {HTMLElement} divText - creates div and sets style
  */
 const divText = document.createElement('div');
@@ -308,4 +251,76 @@ function setMarginBottom(xSmall, small, medium){
         else{
             mainInfoContainer.style.marginBottom = medium;
         }
+}
+
+/**
+ * 
+ ************** ARROW FUNCTIONS *****************
+ * 
+ */
+
+/**
+ * Checks all the up/down arrows in the small introductionMenu
+ */
+function changeArrowIcon(){
+    changeArrowIconIntro();
+    changeArrowIconEducation();
+    changeArrowIconWork();
+    changeArrowIconStrengths();
+    changeArrowIconHobbies();
+}
+
+/**
+ * Changes the first introduction-menu-arrow if needed
+ */
+function changeArrowIconIntro(){
+    if(!showIntro){
+      document.getElementById("introductionArrow").className = "fas fa-angle-down";
+    }else{
+      document.getElementById("introductionArrow").className = "fas fa-angle-up";
+    }
+}
+
+/**
+ * Changes the education-menu-arrow if needed
+ */
+function changeArrowIconEducation(){
+    if(!showEdu){
+      document.getElementById("educationArrow").className = "fas fa-angle-down";
+    }else{
+      document.getElementById("educationArrow").className = "fas fa-angle-up";
+    }
+}
+
+/**
+ * Changes the work-menu-arrow if needed
+ */
+function changeArrowIconWork(){
+    if(!showWork){
+      document.getElementById("workArrow").className = "fas fa-angle-down";
+    }else{
+      document.getElementById("workArrow").className = "fas fa-angle-up";
+    }
+}
+
+/**
+ * Changes the strengths-menu-arrow if needed
+ */
+function changeArrowIconStrengths(){
+    if(!showStrength){
+      document.getElementById("strengthsArrow").className = "fas fa-angle-down";
+    }else{
+      document.getElementById("strengthsArrow").className = "fas fa-angle-up";
+    }
+}
+
+/**
+ * Changes the hobbies-menu-arrow if needed
+ */
+function changeArrowIconHobbies(){
+    if(!showHobbies){
+      document.getElementById("hobbiesArrow").className = "fas fa-angle-down";
+    }else{
+      document.getElementById("hobbiesArrow").className = "fas fa-angle-up";
+    }
 }
