@@ -1,6 +1,6 @@
-# Résumé
+# My résumé
 
-This is my résumé. I tried to keep in mind what represents me in color choices, pictures and esthetics. I like contrasts, bright colors and nature. I am quite young in mind and tried to keep my resume youthful without being to childish. I don't know if I was successful but I am quite pleased with some parts and will probably work a bit on others before actually using this résumé for job hunting. It has a little bit of an 90's feel, but hey, I'm a 90's kid so I guess it can count as charmingly old school.
+This is my résumé, the second school project for the "Javascript 1" course. I tried to keep in mind what represents me in color choices, pictures and esthetics. I like contrasts, bright colors and nature. I am quite young in mind and tried to keep my resume youthful without being to childish. I don't know if I was successful but I am quite pleased with some parts and will probably work a bit on others before actually using this résumé for job hunting. It has a little bit of an 90's feel, but hey, I'm a 90's kid so I guess it can count as charmingly old school.
 
 
 It's in Swedish right now but I hope to do an English version in the near future. I would also like to format the written text a bit more up to my desired standard for a resume. I'm definitely going to format the text before sending it out to potential employers.
