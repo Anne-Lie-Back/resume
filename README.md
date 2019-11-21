@@ -24,4 +24,5 @@ Link to Repository: https://github.com/Anne-Lie-Back/resume
 Link to Demo: https://anne-lie-back.github.io/resume/
 
 
-//Anne-Lie Bäck
+//Anne-Lie Bäck, 
+21 November 2019

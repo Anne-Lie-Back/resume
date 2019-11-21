@@ -1,3 +1,5 @@
+
+
 @media only screen and (max-width: 75em){
 
     .heroImageGrid h4{
@@ -12,7 +14,9 @@
     }
 
     .mainInfoFoto{
+        display:flex;
         justify-content: center;
+        align-items: center;
     }
 
     .mainInfoFoto .profilePictures{
@@ -44,6 +48,10 @@
 
     header{
         z-index: 1000;
+    }
+
+    header h1{
+        margin-left:2rem;
     }
 
     .mainInfoGrid{

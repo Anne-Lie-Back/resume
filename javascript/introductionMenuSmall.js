@@ -79,7 +79,7 @@ function showEducationMobile(){
 
     else{
         const xSmall = "45rem"
-        const small =  "29rem"
+        const small =  "35rem"
         const medium = "27rem"
         mainInfoContainer.style.margin = "1rem 1rem 0rem 1rem";
         setMarginBottom(xSmall, small, medium);
@@ -109,7 +109,7 @@ function showWorkMobile(){
     }
 
     else{
-        const xSmall = "55rem"
+        const xSmall = "62rem"
         const small =  "39rem"
         const medium = "27rem"
         mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";
@@ -142,7 +142,7 @@ function showStrengthsMobile(){
     }
 
     else{
-        const xSmall = "36rem"
+        const xSmall = "48rem"
         const small =  "33rem"
         const medium = "29rem"
         mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";
@@ -175,7 +175,7 @@ function showHobbiesMobile(){
     }
 
     else{
-        const xSmall = "42rem"
+        const xSmall = "48rem"
         const small =  "30rem"
         const medium = "27rem"
         mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";

@@ -3,17 +3,16 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Indie Flower', cursive;
     font-family: 'Baloo Bhaina', cursive;
 }
 
 p, b{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     line-height: 1.5rem;
 }
 
 li{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 1rem 0;
 }
 
@@ -52,12 +51,14 @@ header{
 header h1{
     margin-left:5rem;
     color:white;
+    letter-spacing: 0.1rem;  
 }
 
 .headlineExtra{
     margin:0 1rem;
     font-size:1.1rem;
     color:white;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*** HERO IMAGE ***/
@@ -116,7 +117,7 @@ header h1{
     width:100%;
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+ 
     grid-template-areas: 
     "mainInfoFoto mainInfoText mainInfoText";
 }
@@ -124,7 +125,7 @@ header h1{
 /*** main info FOTO ***/
 .mainInfoFoto{
     grid-area: mainInfoFoto;
-    display:flex;  
+    
 }
 
 .profilePictures{
@@ -136,16 +137,18 @@ header h1{
 /*** main info TEXT CONTAINER ***/
 .mainInfoText{
     grid-area: mainInfoText;
-    margin:3rem 2rem 1rem 0;
     display:flex;
     justify-content: center;
-    align-items: stretch;
+    
+    padding: 2.5rem 1rem 0;
+    margin:0;
 }
 
 .infoBoxContainer{
     display:flex;
     flex-direction: column;
     width:100%;
+    
 }
 
 .infoBoxContainerMobile{
@@ -249,7 +252,7 @@ header h1{
     color:white;
     width:100%;
     background-color: rgb(53, 53, 53);
-    margin: 0 0 2rem 0; 
+    margin: 0 0 4rem 0; 
 }
 
 .portfolio .portfolioHead h3{
