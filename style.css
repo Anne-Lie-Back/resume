@@ -14,6 +14,12 @@ p, b{
 li{
     font-family: 'PT Sans', sans-serif;
     line-height: 3rem;
+    margin: 1rem 0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
 }
 
 body{
@@ -260,7 +266,6 @@ header h1{
 }
 
 .portfolio .portfolioHead a{
-    text-decoration: none;
     color:white;
     transition: color 500ms ease-in-out;
 }
@@ -272,8 +277,12 @@ header h1{
 .portfolio .projectContainer{
     display:flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
 }
+
 .portfolio .project{
+    width:15rem;
     display:flex;
     flex-direction:column;
     background-color:white;
@@ -470,7 +479,7 @@ footer p{
    }
 
    .portfolioHead p{
-       font-size:2rem;
+       font-size:1.5rem;
    }
 
    .portfolio .projectContainer{
@@ -533,6 +542,10 @@ footer p{
         margin:0rem 0.75rem 0.75rem 0;
     }
 
+    .infoNavMobile h2{
+        font-size: 1.2rem;
+    }
+
 }
 
 @media only screen and (max-width: 450px){
@@ -550,6 +563,10 @@ footer p{
         font-size: 0.8rem;
         padding: 0.5rem;
         margin:0.5rem;
+    }
+
+    .portfolioHead p{
+        font-size: 1.2rem;
     }
 
     .portfolio .project{
