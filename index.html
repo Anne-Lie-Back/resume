@@ -6,13 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anne-Lie Bäck</title>
 
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaqueries.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|PT+Sans&display=swap" rel="stylesheet">
+    
 
     <script defer src="./javascript/script.js"></script>
     <script src="./javascript/slider.js"></script>
@@ -22,40 +19,33 @@
     
 </head>
 
-<!--FIX PROFILE IMAGE PLS-->
-<body>
-    
-    
+<body>  
     <header> 
-        <h1>Anne-Lie Bäck </h1><p class="headlineExtra"> - Frontend utvecklare och beteendevetare</p>
+        <h1>Anne-Lie Bäck </h1>
+        <p class="headlineExtra"> - Frontend utvecklare och beteendevetare</p>
     </header>
+
+<!---- HERO IMAGE WITH SLIDER AND HEADLINE---->
+
     <div class="heroImageGrid">
-            <img class="heroImageMobile blackMobile" src="./images/blackMobile.png">
-            <img class="heroImage" src="./images/blackImage.png">
-        <div class ="desktopSlider">
+        <img class="heroImageMobile blackMobile" alt="" src="./images/blackMobile.png">
+        <img class="heroImage" alt="" src="./images/blackImage.png">
+
+        <div class ="heroImageSlider">
             <div class = "sliderImages">
-                <img class="heroImage " src="./images/hero-image1.3.jpg">
-                <img class="heroImageMobile" src="./images/heroImageMobile.jpg">
+                <img class="heroImage " alt="En närbild på en shetland sheepdog i skogen" src="./images/hero-image1.3.jpg">
+                <img class="heroImageMobile" alt="En närbild på en shetland sheepdog i skogen" src="./images/heroImageMobile.jpg">
             </div>
             <div class="sliderImages hidden">
-                <img class="heroImage" src="./images/dressyr.jpg">
-                <img class="heroImageMobile" src="./images/dressyrMobile.jpg">
+                <img class="heroImage" alt="Ett dressyrekipade på tävlingsbanan" src="./images/dressyr.jpg">
+                <img class="heroImageMobile" alt="Ett dressyrekipade på tävlingsbanan" src="./images/dressyrMobile.jpg">
             </div>
             <div class= "sliderImages hidden">
-                <img class="heroImage" src="./images/japanPark.JPG">
-                <img class="heroImageMobile" src="./images/japanParkMobile.png"> 
+                <img class="heroImage" alt="Glad tjej i en park i Japan" src="./images/japanPark.JPG">
+                <img class="heroImageMobile" alt="Glad tjej i en park i Japan" src="./images/japanParkMobile.png"> 
             </div>
         </div>
-        
-    <!--
-        <img class="heroImageSmallMobile" src="./images/blackMobile.png">
-        <div class="mobileSlider">
-                <img class="heroImageMobile" src="./images/heroImageMobile.jpg">
-                <img class="heroImageMobile hidden" src="./images/dressyrMobile.jpg">
-                <img class="heroImageMobile hidden" src="./images/japanParkMobile.png">           
-        </div>
-    -->    
-    
+
         <div class="headlineSlider">
             <h4>Min hund Ninja och naturen <br> -  två av mina största inspirationskällor.</h4> 
             <h4 class="hidden">Att ha tävlat i dressyr har gett mig en strävan av att alltid <br> förbättra min teknik i allt jag ger mig in i. </h4> 
@@ -63,22 +53,37 @@
         </div>  
     </div>
     
-
+<!---- MAIN INFO ---->
     <div class="mainInfo">
         <div class="mainInfoGrid">
+
             <div class="mainInfoFoto">
                 <img src="./images/picture1.jpg" class="profilePictures">
             </div>
 
             <div class="mainInfoText">
+
                 <div class="infoBoxContainer">
+                    <!---BOX TABS--->
                     <div class="boxTabs">
-                        <div id="introduction" class="tab yellow"><h2>HEJ</h2></div>
-                        <div id="education" class="tab lavender"><h2>UTBILDNING</h2></div>
-                        <div id="work" class="tab grey"><h2>ARBETSERFARENHET</h2></div>
-                        <div id="strengths" class="tab green"><h2>EGENSKAPER</h2></div>
-                        <div id="hobbies" class="tab blue"><h2>INTRESSEN</h2></div>
+                        <div id="introduction" class="tab yellow">
+                            <h2>HEJ</h2>
+                        </div>
+                        <div id="education" class="tab lavender">
+                            <h2>UTBILDNING</h2>
+                        </div>
+                        <div id="work" class="tab grey">
+                            <h2>ARBETSERFARENHET</h2>
+                        </div>
+                        <div id="strengths" class="tab green">
+                            <h2>EGENSKAPER</h2>
+                        </div>
+                        <div id="hobbies" class="tab blue">
+                            <h2>INTRESSEN</h2>
+                        </div>
                     </div>
+
+                    <!----TEXT BOX---->
                     <div id="textBox" class="yellow">
                         <div class="textBoxText">
                             <p id="text"></p>
@@ -86,6 +91,7 @@
                     </div>
                 </div>
 
+                <!---- TEXTBOX SMALL SCREEN VERSION ---->
                 <div class="infoBoxContainerMobile">
                     <div class ="infoMobile yellow" id="introductionMobile">
                         <div class="infoNavMobile">
@@ -122,40 +128,47 @@
             </div>
         </div>
     </div>
-    <div class="radiantBox">
-    
+
+    <div class="radiantBox"></div>
+
+<!---- PORTFOLIO ---->
     </div>
-    <div class="portfolio">
-        <div class="portfolioHead">
-            <h3>Portfolio</h3>
-            <p>Se mer på min <a href="https://github.com/Anne-Lie-Back" target="_blank">GitHub</a></p>
-        </div>
+        <div class="portfolio">
+            <div class="portfolioHead">
+                <h3>Portfolio</h3>
+                <p>Se mer på min <a href="https://github.com/Anne-Lie-Back" target="_blank">GitHub</a></p>
+            </div>
         <div class="projectContainer">
             
-            <div class="project">
-                <a href ="https://anne-lie-back.github.io/myFirstAdventure/" target="_blank">
-                    <img src="./images/projekt1.jpg">
-                    <p>Mitt första textbaserat äventyr i Javascript. Kan du hitta alla hemligheter?</p>
-                </a>
-            </div>
+        <div class="project">
+            <a href ="https://anne-lie-back.github.io/myFirstAdventure/" target="_blank">
+                <img src="./images/projekt1.jpg">
+                <p>Mitt första textbaserat äventyr i Javascript. Kan du hitta alla hemligheter?</p>
+            </a>
+        </div>
             
-            <div class="project">
-                <a href ="https://anne-lie-back.github.io/Yoga-Website/" target="_blank">
-                    <img src="./images/yogaWebsite.png">
-                    <p>Vårt andra skolprojekt. Bygga en startsida med en tillhörande undersida i HTML och CSS.</p>
-                </a>
-            </div>
-
+        <div class="project">
+            <a href ="https://anne-lie-back.github.io/Yoga-Website/" target="_blank">
+                <img src="./images/yogaWebsite.png">
+                <p>Vårt andra skolprojekt. Bygga en startsida med en tillhörande undersida i HTML och CSS.</p>
+            </a>
         </div>
     </div>
 
+<!---- FOOTER ---->
     <footer>
             <p>+46704 50 06 93</p>
             <div class="contactIcons">
-                <a href="mailto:a-l.back@outlook.com" target="_blank" title="a-l.back@outlook.com"><i class="far fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/anne-lie-b%C3%A4ck-8648638b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Anne-Lie-Back" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/starstoft/" target="-blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:a-l.back@outlook.com" target="_blank" title="a-l.back@outlook.com">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anne-lie-b%C3%A4ck-8648638b/" target="_blank">
+                    <i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Anne-Lie-Back" target="_blank"><i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/starstoft/" target="-blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>         
     </footer>
     

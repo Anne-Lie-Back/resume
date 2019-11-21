@@ -8,9 +8,9 @@
  * 
  * IT WORKED! Now I can tidy the rest
  */
-function startSliderDesktop(){
-    setInterval(sliderImageDesktop, 6000);
-    sliderImageDesktop();
+function startSlider(){
+    setInterval(sliderImage, 6000);
+    sliderImage();
     /*
     let w = window.innerWidth || document.documentElement.clientWidth;
     //window.addEventListener('resize',startSliderDesktop);
@@ -25,8 +25,8 @@ function startSliderDesktop(){
     */
 }
 
-function sliderImageDesktop(){
-    changeSliderObject(document.querySelectorAll('.desktopSlider div'), currentIndex);
+function sliderImage(){
+    changeSliderObject(document.querySelectorAll('.heroImageSlider div'), currentIndex);
     changeSliderObject(document.querySelectorAll('.headlineSlider h4'), currentIndex);
     currentIndex = (currentIndex + 1) % 3;
 }

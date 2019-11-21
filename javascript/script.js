@@ -4,7 +4,7 @@ window.addEventListener('load', loadSite)
 let currentIndex = 0
 
 function loadSite(){
-startSliderDesktop();
+startSlider();
 writtenIntroText(text);
 
 introduction.addEventListener('click', changeToIntroduction);

@@ -1,0 +1,272 @@
+@media only screen and (max-width: 75em){
+
+    .heroImageGrid h4{
+        top:20rem;
+        left:3rem;
+    }
+
+    .mainInfoGrid{
+        grid-template-areas: 
+        "mainInfoFoto mainInfoFoto mainInfoFoto"
+        "mainInfoText mainInfoText mainInfoText";
+    }
+
+    .mainInfoFoto{
+        justify-content: center;
+    }
+
+    .mainInfoFoto .profilePictures{
+        width:35%;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .mainInfoText{
+        height:30rem;
+        padding:1rem;
+    }
+
+    .portfolio .project{
+        margin: 0 1rem;
+        padding:1rem;
+    }
+}
+
+@media only screen and (max-width: 60.6em){
+
+    .heroImageGrid h4{
+        left:2rem;
+        top:17rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 50em){
+
+    header{
+        z-index: 1000;
+    }
+
+    .mainInfoGrid{
+        grid-template-rows:auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "mainInfoFoto"
+        "mainInfoText";
+    }
+
+    .heroImageGrid h4{
+        left:2rem;
+        top:37.5rem;
+        font-size: 1.3rem;
+    }
+
+    .heroImage{
+        display:none;
+    }
+
+    .heroImageMobile{
+        display:flex;
+        width:100%;
+    }
+
+    .blackMobile{
+        margin-top:3.5rem;
+    }
+
+    .mainInfoFoto .profilePictures{
+        width:45%;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .infoBoxContainer{
+        display:none;
+    } 
+
+    .infoBoxContainerMobile{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        
+        position:absolute;
+        
+        width:95%;
+        background-color: blue;
+        margin-top: 2rem;
+    }
+
+    .infoNavMobile{
+        display:flex;
+        width:100%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding:0.5rem;
+    }
+    
+    .infoNavMobile:hover{
+        cursor: pointer;
+    }
+
+    .infoBoxContainerMobile h2{
+        color:black;
+        margin: 0 0 0 2rem;
+        font-size: 1.5rem;
+        padding: 0.3rem 0 0 0;
+    }
+
+    .infoBoxContainerMobile i{
+        font-size:2rem;
+        margin: 0 2rem 0 0;
+    }
+
+    .mainInfoText{
+        margin:1rem;
+        
+    }
+
+    .infoMobile{
+        display:flex;
+        width:100%;
+        flex-grow:1;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: 0.5rem solid black;
+    }
+
+   li{
+        line-height: 2rem;
+    }
+
+   .portfolioHead p{
+       font-size:1.5rem;
+   }
+
+   .portfolio .projectContainer{
+       width:100%;
+       flex-direction:column;
+       align-items: center;
+       
+   }
+
+   .portfolio .project{
+       margin: 2rem 0;
+       width:20rem;
+   }
+
+   .portfolio{
+       padding:0 0.5rem;
+   }
+
+   footer{
+       justify-content:center;
+      align-items: center;
+      flex-direction: column;
+   }
+   footer p{
+       font-size:1.5rem;
+       margin: 0 0 2.3rem 0;
+   }
+
+   footer .contactIcons i{
+       font-size:3rem;
+       margin: 0 2rem;
+   }
+}
+
+@media only screen and (max-width: 40.6em){
+
+    header{
+        flex-direction: column;
+        height:5.5rem;
+        z-index:1000;
+        align-items: flex-start;
+    }
+
+    header h1{
+        margin: 0 0 0 2rem;
+    }
+
+    header .headlineExtra{
+        margin: -1rem 0 0 1.5rem;
+    }
+
+    .heroImageGrid h4{
+        margin:0rem 0.75rem 0.75rem 0;
+    }
+
+    .heroImageSlider img{
+        top:5.5rem;   
+    }
+
+    .blackMobile{
+        margin-top:5.5rem;
+    }
+
+    .infoNavMobile h2{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 28.1em){
+
+    .heroImageGrid h4{
+        left:1rem;
+        top:30rem;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        margin:0.5rem;
+    }
+
+    .heroImageSlider img{
+        top:6.5rem;   
+    }
+
+    .blackMobile{
+        margin-top:6.5rem;
+    }
+
+    .mainInfoFoto .profilePictures{
+        width:60%;
+        padding: 0 1rem;
+    }
+
+    .portfolioHead p{
+        font-size: 1.2rem;
+    }
+
+    .portfolio .project{
+        margin: 2rem 0;
+        width:15rem;
+    }
+    
+    footer .contactIcons i{
+        font-size: 3rem;
+        margin: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 21.9em){
+
+    header h1{
+        margin: 0 0 0 1rem;
+    }
+
+    header .headlineExtra{
+        margin: -1rem 0 0 1rem;
+        font-size: 1rem;
+    }
+    
+    .heroImageGrid h4{
+        left:0.5rem;
+        top:25rem;
+    }
+
+    .portfolio p{
+        text-align: center;
+        line-height: 1.5;
+    }
+
+}
