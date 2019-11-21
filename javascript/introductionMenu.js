@@ -1,3 +1,8 @@
+/**
+ * Writes out the string for the introduction-text.
+ * @param {HTMLElement} source - recieves if the text is for displaying in large info-container or small.
+ */
+
 function writtenIntroText(source){
     source.innerHTML = '<p> Webbplatser tar mer och större plats i människans vardag för var år som tickar på. '
     + 'Webben är en kommunikationstung plats där det sker en anna typ av socialisering än i den vanliga världen, men likväl en '
@@ -8,6 +13,10 @@ function writtenIntroText(source){
     + 'trevlig som möjlig för alla inblandade i processen. </p>';
 }
 
+/**
+ * Writes out the string for the education-text.
+ * @param {HTMLElement} source - recieves if the text is for displaying in large education-container or small.
+ */
 function writtenEducationText(source){
     source.innerHTML = '<p> <b> HT 2001 - VT 2004 </b> läste jag <b> Media - inriktning rörlig bild och ljud</b> på <b>Västerhöjdsgymnasiet </b> '
     + 'i Skövde. Redan då lades grunden för mina kunskaper kring färglära, bildkomposition och mediekommunikation. </p>'
@@ -19,12 +28,20 @@ function writtenEducationText(source){
     + 'allt <b> HTML, CSS & Javascript</b>.</p>'
 }
 
+/**
+ * Writes out the string for the work-text.
+ * @param {HTMLElement} source - recieves if the text is for displaying in large work-container or small.
+ */
 function writtenWorkText(source){
     source.innerHTML = '<p> Direkt efter gymnasiet, <b>hösten 2004</b>, fick jag jobb på <b> McDonalds</b> i Skövde. Snabbt avancerade jag till handledare och fick då i uppdrag att utbilda de anställda inom kvalitét och service. Jag fick även hjälpa till med att utbilda och stötta de nya arbetsledarna i sin nya roll. 2010-2013 var jag tjänsteledig för studier och <b> sommaren 2015 </b> stämplade jag ut från McDonalds för gott. </p>'
     + '<br><p><b>Hösten 2015</b> klev jag in på <b>Norrmalmskolan</b> i Skövde för att påbörja min roll som <b>fritidspedagog</b>. Jag jobbade med barn i både låg och mellanstadiet. Min pedagogikfilosofi var att "Det är okej att inte vara som alla andra, så länge man är snäll". Mitt mål var att försöka hitta barnens speciallintressen och hjälpa dem att utvecklas inom dessa intressen. Barnen kom ofta till mig när de kände att de ville prata med en vuxen och jag hoppas våra samtal var lika givande för dem som de var för mig.' 
     + ' <b> Sommaren 2019</b> sa jag "hej då" till barnen och styrde min kos mot Göteborg. </p>';
 }
 
+/**
+ * Writes out the string for the strength-text.
+ * @param {HTMLElement} source - recieves if the text is for displaying in large strength-container or small.
+ */
 function writtenStrengthsText(source){
     source.innerHTML = '<p><ul><li>Jag har ett <b>bra öga för både helhet och detaljer</b>.</li>' 
     + '<li>Jag är duktig på att <b>utveckla idéer</b> och se både möjligheter och eventuell problematik.</li>'
@@ -34,6 +51,10 @@ function writtenStrengthsText(source){
 
 }
 
+/**
+ * Writes out the string for the hobbies-text.
+ * @param {HTMLElement} source - recieves if the text is for displaying in large hobbies-container or small.
+ */
 function writtenHobbiesText(source){
     source.innerHTML = '<p> När jag inte studerar eller gör andra måsten gillar jag att ägna min tid med att <b> spela </b>, både brädspel och data/tv-spel.'
     + ' Mycket Nintendo blir det, och spelar jag något på daton blir det oftast Dota 2, något historiedrivet spel eller peka klicka-äventyr. '
@@ -47,27 +68,43 @@ function writtenHobbiesText(source){
 /**
  * MAIN TEXTBOX FUNCTIONS!
  */
+
+ /**
+  * Sets the color for the textbox and updates text for introduction.
+  */
 function changeToIntroduction(){
     textBox.className = 'yellow';
     writtenIntroText(text);
 }
 
+ /**
+  * Sets the color for the textbox and updates text for education.
+  */
 function changeToEducation(){
     textBox.className = 'lavender';
     writtenEducationText(text)
     
 }
 
+ /**
+  * Sets the color for the textbox and updates text for work.
+  */
 function changeToWork(){
     textBox.className = 'grey';
     writtenWorkText(text);
 }
 
+ /**
+  * Sets the color for the textbox and updates text for strength.
+  */
 function changeToStrengths(){
     textBox.className = 'green';
     writtenStrengthsText(text)
 }
 
+ /**
+  * Sets the color for the textbox and updates text for hobbies.
+  */
 function changeToHobbies(){
     textBox.className = 'blue';
     writtenHobbiesText(text)
@@ -78,30 +115,93 @@ function changeToHobbies(){
  * MOBILE TEXTBOX FUNCTIONS
  */
 
+/**
+ * @type {Boolean} showIntro - false if showIntro is not showing
+ */
 let showIntro = false;
+
+/**
+ * @type {Boolean} showEdu - false if showEdu is not showing
+ */
 let showEdu = false;
+
+/**
+ * @type {Boolean} showWork - false if showWork is not showing
+ */
 let showWork = false;
+
+/**
+ * @type {Boolean} showStrength - false if showStrength is not showing
+ */
 let showStrength = false;
+
+/**
+ * @type {Boolean} showHobbies - false if showHobbies is not showing
+ */
 let showHobbies = false;
 
 
-function changeArrowIcon(chosenInfo){
-    if(document.getElementById(chosenInfo).className=="fas fa-angle-down"){
-      document.getElementById(chosenInfo).className = "fas fa-angle-up";
+function changeArrowIcon(){
+    changeArrowIconIntro();
+    changeArrowIconEducation();
+    changeArrowIconWork();
+    changeArrowIconStrengths();
+    changeArrowIconHobbies();
+}
+
+function changeArrowIconIntro(){
+    if(!showIntro){
+      document.getElementById("introductionArrow").className = "fas fa-angle-down";
     }else{
-      document.getElementById(chosenInfo).className = "fas fa-angle-down";
+      document.getElementById("introductionArrow").className = "fas fa-angle-up";
     }
 }
 
+function changeArrowIconEducation(){
+    if(!showEdu){
+      document.getElementById("educationArrow").className = "fas fa-angle-down";
+    }else{
+      document.getElementById("educationArrow").className = "fas fa-angle-up";
+    }
+}
+
+function changeArrowIconWork(){
+    if(!showWork){
+      document.getElementById("workArrow").className = "fas fa-angle-down";
+    }else{
+      document.getElementById("workArrow").className = "fas fa-angle-up";
+    }
+}
+
+function changeArrowIconStrengths(){
+    if(!showStrength){
+      document.getElementById("strengthsArrow").className = "fas fa-angle-down";
+    }else{
+      document.getElementById("strengthsArrow").className = "fas fa-angle-up";
+    }
+}
+
+function changeArrowIconHobbies(){
+    if(!showHobbies){
+      document.getElementById("hobbiesArrow").className = "fas fa-angle-down";
+    }else{
+      document.getElementById("hobbiesArrow").className = "fas fa-angle-up";
+    }
+}
+
+/**
+ * Handles what happens when introduction-tab in small-screen mode is clicked
+ */
 function showIntroductionMobile(){ 
+
     
-    changeArrowIcon("informationArrow");
 
     if(showIntro){
 
         removeInfoText(divIntro);
         mainInfoContainer.style.margin = "1rem";
         showIntro = false;
+        changeArrowIcon();
         
     }
 
@@ -110,6 +210,7 @@ function showIntroductionMobile(){
         const small =  "33rem"
         const medium = "25rem"
 
+        
         createInfoText('introductionMobile' , 'divIntro');
         mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";
         setMarginBottom(xSmall, small, medium)
@@ -120,18 +221,18 @@ function showIntroductionMobile(){
         showWork = false;
         showStrength = false;
         showHobbies = false;
+        changeArrowIcon();
     }
     
 }
 
 function showEducationMobile(){
 
-    changeArrowIcon("educationArrow");
-
     if(showEdu){
         removeInfoText(divEdu)
         mainInfoContainer.style.margin = "1rem";
         showEdu = false;
+        changeArrowIcon();
     }
 
     else{
@@ -139,6 +240,7 @@ function showEducationMobile(){
         const small =  "29rem"
         const medium = "27rem"
 
+        
         createInfoText('educationMobile', 'divEdu');
         
         mainInfoContainer.style.margin = "1rem 1rem 0rem 1rem";
@@ -149,6 +251,7 @@ function showEducationMobile(){
         showWork = false;
         showStrength = false;
         showHobbies = false;
+        changeArrowIcon();
     }
 }
 
@@ -160,6 +263,7 @@ function showWorkMobile(){
         removeInfoText(divWork);
         mainInfoContainer.style.margin = "1rem";
         showWork = false;
+        changeArrowIcon();
     }
 
     else{
@@ -178,6 +282,7 @@ function showWorkMobile(){
         showWork = true;
         showStrength = false;
         showHobbies = false;
+        changeArrowIcon();
     }
 }
 
@@ -189,6 +294,7 @@ function showStrengthsMobile(){
         removeInfoText(divStrength);
         mainInfoContainer.style.margin = "1rem";
         showStrength = false;
+        changeArrowIcon();
     }
 
     else{
@@ -207,6 +313,7 @@ function showStrengthsMobile(){
         showWork = false;
         showStrength = true;
         showHobbies = false;
+        changeArrowIcon();
     }
 }
 
@@ -218,6 +325,7 @@ function showHobbiesMobile(){
         removeInfoText(divHobbies);
         mainInfoContainer.style.margin = "1rem";
         showHobbies = false;
+        changeArrowIcon();
     }
 
     else{
@@ -236,6 +344,7 @@ function showHobbiesMobile(){
         showWork = false;
         showStrength = false;
         showHobbies = true;
+        changeArrowIcon();
     }
 }
 

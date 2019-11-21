@@ -1,8 +1,10 @@
 
+
 window.addEventListener('load', loadSite)
 
-let currentIndex = 0
-
+/**
+ * What happens when the site loads and sets eventlisteners.
+ */
 function loadSite(){
 startSlider();
 writtenIntroText(text);
@@ -20,18 +22,87 @@ strenghtsMobile.addEventListener('click', showStrengthsMobile)
 hobbiesMobile.addEventListener('click', showHobbiesMobile)
 }
 
-let introduction = document.getElementById('introduction');
-let education = document.getElementById('education');
-let work = document.getElementById('work');
-let strengths = document.getElementById('strengths');
-let hobbies = document.getElementById('hobbies');
-let textBox = document.getElementById('textBox')
-let text = document.getElementById('text');
+/**
+ * GLOBAL VARIABLES
+ */
 
-let introductionMobile = document.getElementById('introductionMobile');
-let educationMobile = document.getElementById('educationMobile');
-let workMobile = document.getElementById('workMobile')
-let strenghtsMobile = document.getElementById('strengthsMobile')
-let hobbiesMobile = document.getElementById('hobbiesMobile')
-let mainInfoContainer = document.querySelector(".mainInfoText")
+/**
+ * @type {Number} currentIndex - calculates current index in slider.
+ */
+let currentIndex = 0
+
+/**
+ * @type {HTMLElement} textBox - gets the textBox for changeing color
+ */
+const textBox = document.getElementById('textBox')
+
+/**
+ * @type {HTMLElement} text - gets the text in the textboxes.
+ */
+const text = document.getElementById('text');
+
+
+/***
+ * 
+ *  LARGE INTRODUCTION TAB VARIABLES **
+ */
+/**
+ * @type {HTMLElement} introduction - gets the introduction-tab
+ */
+const introduction = document.getElementById('introduction');
+
+/**
+ * @type {HTMLElement} education - gets the education-tab
+ */
+const education = document.getElementById('education');
+
+/**
+ * @type {HTMLElement} work - gets the work-tab
+ */
+const work = document.getElementById('work');
+
+/**
+ * @type {HTMLElement} strengths - gets the strengths-tab
+ */
+const strengths = document.getElementById('strengths');
+
+/**
+ * @type {HTMLElement} hobbies - gets the hobbie-tab
+ */
+const hobbies = document.getElementById('hobbies');
+
+/**
+ * 
+ * SMALL INTRODUCTION TAB VARIABLES
+ */
+
+/**
+ * @type {HTMLElement} introductionMobile - gets the introduction-tab
+ */
+const introductionMobile = document.getElementById('introductionMobile');
+
+/**
+ * @type {HTMLElement} educationMobile - gets the education-tab
+ */
+const educationMobile = document.getElementById('educationMobile');
+
+/**
+ * @type {HTMLElement} workMobile - gets the work-tab
+ */
+const workMobile = document.getElementById('workMobile')
+
+/**
+ * @type {HTMLElement} strengthsMobile - gets the strengths-tab
+ */
+const strenghtsMobile = document.getElementById('strengthsMobile')
+
+/**
+ * @type {HTMLElement} hobbiesMobile - gets the hobbies-tab
+ */
+const hobbiesMobile = document.getElementById('hobbiesMobile')
+
+/**
+ * @type {HTMLElement} mainInfoContainer - gets the mainInfotext-div for styling
+ */
+const mainInfoContainer = document.querySelector(".mainInfoText")
 
