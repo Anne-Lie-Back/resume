@@ -39,7 +39,7 @@
 
     .heroImageGrid h4{
         left:2rem;
-        top:17rem;
+        top:15rem;
         font-size: 1.2rem;
     }
 }
@@ -202,6 +202,7 @@
 
     .heroImageGrid h4{
         margin:0rem 0.75rem 0.75rem 0;
+        top: 36rem;
     }
 
     .heroImageSlider img{
