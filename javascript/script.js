@@ -6,20 +6,23 @@ window.addEventListener('load', loadSite);
  * What happens when the site loads and sets eventlisteners.
  */
 function loadSite(){
-startSlider();
-writtenIntroText(text);
+    startSlider();
+    writtenIntroText(text);
+    setupEventListeners();
+}
 
-introduction.addEventListener('click', changeToIntroduction);
-education.addEventListener('click', changeToEducation);
-work.addEventListener('click', changeToWork);
-strengths.addEventListener('click', changeToStrengths);
-hobbies.addEventListener('click', changeToHobbies);
+function setupEventListeners(){
+    introduction.addEventListener('click', changeToIntroduction);
+    education.addEventListener('click', changeToEducation);
+    work.addEventListener('click', changeToWork);
+    strengths.addEventListener('click', changeToStrengths);
+    hobbies.addEventListener('click', changeToHobbies);
 
-introductionMobile.addEventListener('click',showIntroductionMobile);
-educationMobile.addEventListener('click', showEducationMobile);
-workMobile.addEventListener('click', showWorkMobile);
-strenghtsMobile.addEventListener('click', showStrengthsMobile);
-hobbiesMobile.addEventListener('click', showHobbiesMobile);
+    introductionMobile.addEventListener('click',showIntroductionMobile);
+    educationMobile.addEventListener('click', showEducationMobile);
+    workMobile.addEventListener('click', showWorkMobile);
+    strenghtsMobile.addEventListener('click', showStrengthsMobile);
+    hobbiesMobile.addEventListener('click', showHobbiesMobile);
 }
 
 /**
