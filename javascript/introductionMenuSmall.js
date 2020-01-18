@@ -47,9 +47,9 @@ function showIntroductionMobile(){
     }
 
     else{
-        const xSmall = "52rem"
-        const small =  "33rem"
-        const medium = "25rem"
+        const xSmall = "52rem";
+        const small =  "33rem";
+        const medium = "25rem";
         mainInfoContainer.style.margin = "1rem 1rem 30rem 1rem";
         setMarginBottom(xSmall, small, medium);
 
