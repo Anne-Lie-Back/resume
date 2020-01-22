@@ -11,8 +11,8 @@ function writtenIntroText(source){
     + 'typ av socialisering. <br><br> Med min kunskap inom socialpsykologi och människans beteende kombinerat med de kunskaper jag börjat'
     + ' förvärva inom frontend development tror jag att jag kan vara ett ovärderligt tillskott för den organisation som väljer'
     + ' att ta mig till sig. <br><br> Jag har ett stort intresse för varför människan gör de valen de gör på webben och vill fortsätta utvecklas '
-    + 'inom det området för att kunna utveckla så trevliga användarupplevelser som möjligt, och samtidigt göra utvecklingsprocessen så '
-    + 'trevlig som möjlig för alla inblandade i processen. </p>';
+    + 'inom det området för att kunna utveckla så trevliga användarupplevelser som möjligt. Samtidigt vill jag nyttja mina socialpsykologiska '+
+    ' kunskaper för att göra utvecklingsprocessen så trevlig som möjlig för alla inblandade i processen. </p>';
 }
 
 /**
@@ -35,8 +35,12 @@ function writtenEducationText(source){
  * @param {HTMLElement} source - recieves if the text is for displaying in large work-container or small.
  */
 function writtenWorkText(source){
-    source.innerHTML = '<p> Direkt efter gymnasiet, <b>hösten 2004</b>, fick jag jobb på <b> McDonalds</b> i Skövde. Snabbt avancerade jag till handledare och fick då i uppdrag att utbilda de anställda inom kvalitét och service. Jag fick även hjälpa till med att utbilda och stötta de nya arbetsledarna i sin nya roll. 2010-2013 var jag tjänsteledig för studier och <b> sommaren 2015 </b> stämplade jag ut från McDonalds för gott. </p>'
-    + '<br><p><b>Hösten 2015</b> klev jag in på <b>Norrmalmskolan</b> i Skövde för att påbörja min roll som <b>fritidspedagog</b>. Jag jobbade med barn i både låg och mellanstadiet. Min pedagogikfilosofi var att "Det är okej att inte vara som alla andra, så länge man är snäll". Mitt mål var att försöka hitta barnens speciallintressen och hjälpa dem att utvecklas inom dessa intressen. Barnen kom ofta till mig när de kände att de ville prata med en vuxen och jag hoppas våra samtal var lika givande för dem som de var för mig.' 
+    source.innerHTML = '<p> Direkt efter gymnasiet, <b>hösten 2004</b>, fick jag jobb på <b> McDonalds</b> i Skövde. Snabbt avancerade jag till '
+    + 'handledare och fick då i uppdrag att utbilda de anställda inom kvalitét och service. Jag fick även hjälpa till med att utbilda och stötta'
+    + ' de nya arbetsledarna i sin nya roll. 2010-2013 var jag tjänsteledig för studier och <b> sommaren 2015 </b> stämplade jag ut från McDonalds för gott. </p>'
+    + '<br><p><b>Hösten 2015</b> klev jag in på <b>Norrmalmskolan</b> i Skövde för att påbörja min roll som <b>fritidspedagog</b>. Jag jobbade '
+    + 'med barn i både låg och mellanstadiet. Min pedagogikfilosofi var att "Det är okej att inte vara som alla andra, så länge man är snäll". '
+    + 'Mitt mål var att försöka hitta barnens specialintressen och hjälpa dem att utvecklas inom dessa intressen. Barnen kom ofta till mig när de kände att de ville prata med en vuxen och jag hoppas våra samtal var lika givande för dem som de var för mig.' 
     + ' <b> Sommaren 2019</b> sa jag "hej då" till barnen och styrde min kos mot Göteborg. </p>';
 }
 
@@ -47,8 +51,8 @@ function writtenWorkText(source){
 function writtenStrengthsText(source){
     source.innerHTML = '<p><ul><li>Jag har ett <b>bra öga för både helhet och detaljer</b>.</li>' 
     + '<li>Jag är duktig på att <b>utveckla idéer</b> och se både möjligheter och eventuell problematik.</li>'
-    + '<li>Jag har <b>stor förståelse för det mänskliga beteendet</b> och är en <b> engagerad, noggrann kommunikatör </b>, vilket är en stor fördel för att undvika onödiga missförstånd.</li>'
-    + '<li>I vad jag ger mig in i försöker jag att alltid slipa på min teknik och sträva efter en <b>hög lägstanivå</b>. </li>'
+    + '<li>Jag har <b>stor förståelse för det mänskliga beteendet</b> och är en <b> engagerad, noggrann kommunikatör </b>, vilket är en fördel när man vill undvika onödiga missförstånd.</li>'
+    + '<li>I vad jag än ger mig in i försöker jag att alltid slipa på min teknik och sträva efter en <b>hög lägstanivå</b>. </li>'
     + '<li>Jag är <b>ödmjuk</b> inför det faktum att jag har mycket mer att lära.</li></ul></p>';
 
 }
@@ -58,8 +62,8 @@ function writtenStrengthsText(source){
  * @param {HTMLElement} source - recieves if the text is for displaying in large hobbies-container or small.
  */
 function writtenHobbiesText(source){
-    source.innerHTML = '<p> När jag inte studerar eller gör andra måsten gillar jag att ägna min tid med att <b> spela </b>, både brädspel och data/tv-spel.'
-    + ' Mycket Nintendo blir det, och spelar jag något på daton blir det oftast Dota 2, något historiedrivet spel eller peka klicka-äventyr. '
+    source.innerHTML = '<p> När jag inte studerar eller gör andra måsten gillar jag att ägna min tid åt att <b> spela </b>, både brädspel och data/tv-spel.'
+    + ' Mycket Nintendo blir det, och spelar jag något på datorn blir det oftast Dota 2, något historiedrivet spel eller peka klicka-äventyr. '
     + 'Jag älskar även <b>film, serier och anime</b>. <br> <br> Intressen som inte involverar en skärm innefattar <b>matlagning</b>, gärna med asiatiska influenser, '
     +'och att <b>pyssla</b>. Mestadels blir det pärlplattetavlor som får bli offer för min inspiration. <br> Jag uppskattar även långa promenader i '
     + '<b>fina omgivningar</b> med hunden, <b>yoga</b> och <b>dans</b>. <br><br> Gillar ni <b>quiz</b> är jag tjejen för er. Jag kan lite om mycket och är extra kunnig'

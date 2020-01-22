@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Baloo Bhaina', cursive;
+    font-family: 'Fredoka One', 'Baloo Bhaina', cursive;
 }
 
 p, b{
@@ -96,12 +96,13 @@ header h1{
 .headlineSlider h4{
     position:absolute;
     transition: opacity 2000ms;
-    top:23rem;
-    left:5rem;
-    font-size:1.5rem;
+    top:30rem;
+    left:13rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size:1.2rem;
     color:white;
-    background:#00000099;
-    padding: 0.3rem 1.5rem;
+    background:#000000;
+    padding: 0.8rem 1.5rem;
     border-radius: 0.3rem;
 }
 
@@ -135,6 +136,13 @@ header h1{
 }
 
 /*** main info TEXT CONTAINER ***/
+
+h2{
+    font-family: 'Baloo Bhaina', cursive;
+    font-size:0.8rem;
+    letter-spacing: 0.1rem;
+}
+
 .mainInfoText{
     grid-area: mainInfoText;
     display:flex;
@@ -159,11 +167,6 @@ header h1{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-}
-
-.boxTabs h2{
-    font-size:0.8rem;
-    letter-spacing: 0.1rem;
 }
 
 .tab{
@@ -286,7 +289,7 @@ header h1{
     margin:0 4rem 4rem 4rem;
     border-radius: 0.2rem;
     box-shadow: 0 0 1rem black;
-
+    justify-content: space-between;
     transition: box-shadow 200ms ease-in-out;
     
 }
